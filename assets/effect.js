@@ -176,15 +176,15 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
 			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==150){
-				$("p:nth-child(149)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
-				});
-				
-			}
-			else{
-				msgLoop(i);
-			}			
+			// if(i==150){
+			// 	$("p:nth-child(149)").fadeOut('slow').promise().done(function () {
+			// 		$('.cake').fadeIn('fast');
+			// 	});
+			// }
+			// else{
+			// 	msgLoop(i);
+			// }	
+			msgLoop(i);		
 
 		});
 			// body...
